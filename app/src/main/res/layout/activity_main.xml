@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loteria"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:id="@+id/titulo"/>
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="340dp"
+        android:layout_height="545dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar"
+        android:id="@+id/iniciar"
+        android:backgroundTint="#048719"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Loteria!"
+        android:id="@+id/parar"
+        android:backgroundTint="#fff"
+        android:enabled="false"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/iniciar"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restantes"
+        android:id="@+id/restantes"
+        android:backgroundTint="#FFF"
+        android:enabled="false"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/parar"
+        android:layout_marginLeft="11dp"/>
+
+</RelativeLayout>
